@@ -1,0 +1,18 @@
+﻿<table class="table table-bordered table-hover">
+
+    <tr>
+        <th>
+            StudentName
+        </th>
+        <th>
+            student_id
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Id</td>
+        </tr>
+    }
+</table>
