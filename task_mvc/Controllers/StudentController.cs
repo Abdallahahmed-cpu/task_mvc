@@ -13,7 +13,7 @@ namespace task_mvc.Controllers
 
         public IActionResult GetAllStudents()
         {
-            return View("index", _students); // Pass all students for list display
+            return View("index", _students); 
         }
 
         public IActionResult StudentById(int id)
@@ -23,7 +23,7 @@ namespace task_mvc.Controllers
             {
                 return NotFound();
             }
-            return View("index", student); // Pass single student for details display
+            return View("index", student); 
         }
     }
 
